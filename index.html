@@ -14,8 +14,9 @@
         }
 
         /* Banner */
-        #banner .inner {
-            text-align: center;
+        #banner .inner .center-text {
+            max-width: 800px;
+            margin: 0 auto 1.5em auto; /* keep centered */
         }
         #banner h1 {
             font-size: 4em;
@@ -62,9 +63,14 @@
         }
 
         #footer h2 {
-            color: #70c7be;
+            color: #ffffff;
             font-size: 1.8em;
             margin-bottom: 0.5em;
+        }
+
+        #footer a[href*="t.me"] {
+            color: inherit; /* inherit white from parent */
+            text-decoration: underline;
         }
 
         #footer .icons li {
@@ -219,6 +225,7 @@
 
 </body>
 </html>
+
 
 
 
