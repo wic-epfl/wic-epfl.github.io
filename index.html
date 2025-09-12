@@ -1,128 +1,136 @@
 <!DOCTYPE HTML>
-<html><head><title>Women+ in IC</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head><body id="top">
+<html>
+<head>
+    <title>Women+ in IC</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #faf3ff;
+            font-family: "Source Sans Pro", sans-serif;
+            color: #202024;
+        }
 
-				<section id="banner"><div class="inner"> <!--"images/banner_wic"-->
-						<header>
-							<img src="images/logo_clear.png" alt="" width="200" height="200"> 
-							<h1> Women+ in IC </h1>
-							
-							</br>
-							<p>We are an EPFL association under the umbrella of the IC faculty. Our goals are to build a community for women-identifying, non binary, agender peers; provide exposure; and create bridges 💜<br></p>
-						</header>
-					</div>
-				</section>
-				
-				<div id="main">
-					<div class="inner">
-						<h3>Our Activities</h3>
-						</br>
+        /* ------------------------- */
+        /* BANNER */
+        /* ------------------------- */
+        #banner .inner {
+            text-align: center;
+        }
+        #banner h1 {
+            font-family: 'Passion One', cursive;
+            font-size: 5em;
+        }
+        #banner p {
+            font-size: 1.5em;
+            color: #202024;
+        }
 
-						<div class="thumbnails">
+        /* ------------------------- */
+        /* OUR ACTIVITIES SECTION */
+        /* ------------------------- */
+        #main h3.activities,
+        #main h3.code-of-conduct,
+        #main h3.statutes {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
 
-							<div class="box">
-							    <img src="images/seminar.jpg" alt="" width="300" height="200">
-							    <div class="inner">
-							        <h3><a href="seminars.html" class="link-text">Lunch Time Seminars</a></h3>
-							        <p>From tenured professors to junior engineers, members of the community share their journeys and insights on a career in computer science.</p>
-							    </div>
-							</div>
+        .thumbnails .box {
+            background-color: #ffffff; /* white card background */
+            color: #202024; /* text color */
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2em;
+        }
 
-							<div class="box">
-								<img src="images/EWM_shop_2007.jpg" alt="" width="300" height="200">
-								<div class="inner">
-									<h3><a href="workshops.html" class="link-text">Workshops</a></h3>
-									<p>Skill-oriented workshops in collaboration with companies.</p>
-									<!-- <a href="seminars.html" class="button style3 fit" >Past Events</a> -->
-								</div>
-							</div>
+        .thumbnails .box .inner h3 a.link-text {
+            color: #202024; /* same as normal text */
+            text-decoration: none;
+        }
 
-							<div class="box">
-								<img src="images/march8.jpg" alt="" width="300" height="200">
-								<div class="inner">
-									<h3>Feminist Events</h3>
-									<p>We participate in (inter)national feminist initivatives events such as IWRD (March 8th) and the Feminist Strike (June 14th).</p>
-									<!--<a href="seminars.html" class="button style3 fit" >Past Events</a>-->
-								</div>
-							</div>
+        .thumbnails .box .inner h3 a.link-text:hover {
+            color: #ff8686; /* optional hover color */
+        }
 
-							<div class="box">
-								<img src="images/study.jpg" alt="" width="300" height="200">
-								<div class="inner">
-									<h3>Other events</h3>
-									<p>We organize a variety of other events throughout the year. Click to find more!</p>
-								</div>
-							</div>
+        /* ------------------------- */
+        /* CODE OF CONDUCT & STATUTES */
+        /* ------------------------- */
+        #main p.code-of-conduct-text,
+        #main p.statutes-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 2em auto;
+            font-size: 1.1em;
+        }
 
-						
+        /* ------------------------- */
+        /* FOOTER IMPROVEMENTS */
+        /* ------------------------- */
+        #footer {
+            background-color: #2c2c32;
+            color: #ffffff;
+            text-align: center;
+            padding: 3em 1em;
+        }
 
+        #footer h2 {
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            color: #70c7be; /* topaz color */
+        }
 
-						</div>
-					</div>
-					<div class="inner">
-						<h3>Code of Conduct for Women+ in IC events.</h3>
-						<p>While most of your events are mixed, maintaining a few non-mixed events ensures that the association is inclusive of all members' needs, recognizing that different spaces serve different purposes. The “women+ only" shortcut helps quickly convey the intention behind these events, ensuring they remain a safe and supportive environment for those who need it most.</p>
+        #footer p {
+            max-width: 600px;
+            margin: 0 auto 1.5em auto;
+        }
 
-						<p> As an ally at our events, be mindful of the space you occupy, both physically and in conversation, and be open to feedback if something you say or do is called out as problematic. Instead of becoming defensive, take time to reflect and learn from the experience.</p>
-						</br>
-					</div>
+        #footer .icons li {
+            display: inline-block;
+            margin: 0 0.5em;
+        }
 
-					<div class="inner">
-						<h3> <a href="statutes.pdf" target="_blank">Our Statutes.</a></h3>
-						</br>
-					</div>
-				</div>
+        #footer .icons li a {
+            font-size: 1.8em;
+            color: #ffffff;
+            display: inline-block;
+            width: 2.5em;
+            height: 2.5em;
+            line-height: 2.5em;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.25);
+        }
 
-				
+        #footer .icons li a:hover {
+            color: #70c7be;
+            border-color: #70c7be;
+        }
 
-			<!-- Footer -->
-				<footer id="footer"><div class="inner">
-						<h2>Join the community: </h2>
-						<p>The easiest way to be part of the Women+ in IC community and stay up to date with our events is to join our <a href=""> telegram group</a>!</p>
+        /* ------------------------- */
+        /* EXTRA RESOURCES */
+        /* ------------------------- */
+        #main .inner.extra-resources ul {
+            font-size: 0.9em;
+            max-width: 800px;
+            margin: 0 auto 2em auto;
+        }
 
-						<h2>Contact:</h2>						
-						<p>We are always happy to collaborate towards organizing events! So please reach out through any of the platforms below to discuss ideas!</p>
+        #main .inner.extra-resources ul li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body id="top">
 
-						<ul class="icons">
-							<li><a href="https://www.instagram.com/wic_epfl/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="mailto:WomenInIC_committee@groupes.epfl.ch" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://t.me/+UaM-G3EYPQM2MjBk" class="icon fa-paper-plane"><span class="label">Telegram</span></a></li>
-						</ul></div>
-				</footer>
-			
-			<div id="main">
-				<div class="inner">
-					<h3>Extra Resources.</h3>
-					<ul>
-						<li>
-							<a href="https://www.youtube.com/@polyquityepfl154/featured"> Polyquity</a> is the association for BSc and MSc students for gender equality on campus. 
-
-						</li>
-						<li>
-							<a href="https://www.lausanne.ch/vie-pratique/aides-assurances-sociales/prestations-sociales/profa-centre-consultation-lavi.html"> LAVI</a> is a center for victims of (sexual/psychological) violence. The website is only available in French, however we would be more than happy to translate it and help you navigate the page.
-						</li>
-						<li>
-							<a href="https://www.epfl.ch/about/respect/trust-and-support-network/"> TSN </a> is a network at EPFL which can provide assistance in situations related to psychosocial risks. 
-						</li>
-						<li>
-							<a href="https://csnow.inf.ethz.ch/en/"> CSNOW </a> is the ETHZ equivalent of Women+ in IC.
-						</li>
-						<li> 
-							<a href="https://www.womenincryptography.com">Women in cryptography</a> and <a href="https://www.widsworldwide.org/">Women in data science</a> are two groups focussed on building communities and enhance knowledge in specific fields. 
-						</li>
-					</ul>
-					
-					</br>
-				</div>
-			</div>
-
-			<div class="copyright">
-				Site made with: <a href="https://templated.co/">Templated</a>.
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.poptrox.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
-	</body>
-</html>
+    <!-- BANNER -->
+    <section id="banner">
+        <div cl
 
 
 
