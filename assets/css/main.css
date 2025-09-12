@@ -31,11 +31,13 @@ a:hover {
 }
 
 #banner h1 {
-    color: #6b2dcf; /* dark purple */
-    font-family: 'Passion One', cursive;
+    color: #333; /* black/dark text */
+    font-family: "Source Sans Pro", sans-serif; /* same as body */
     font-size: 5em;
     margin: 0;
+    font-weight: normal; /* optional to match body text weight */
 }
+
 
 #banner p {
     color: #333; /* readable text */
