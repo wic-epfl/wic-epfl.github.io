@@ -1,87 +1,61 @@
-@charset "UTF-8";
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
-
-/* Reset & Box Model (unchanged) */
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-*, *:before, *:after {
-	box-sizing: border-box;
-}
-
-/* Body & Fonts */
-
-body {
-    background-color: #faf3ff; /* super light purple background */
-    color: #333; /* dark text for readability */
+/* Reset & basic styles remain the same */
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 14pt;
-    line-height: 1.65;
+    background-color: #faf3ff; /* super light purple */
+    color: #333; /* dark text for readability */
 }
 
+/* Links */
 a {
     color: #6b2dcf; /* purple links */
-    text-decoration: underline;
-    transition: color 0.3s ease;
+    text-decoration: none;
+    border-bottom: 1px dotted #6b2dcf;
 }
 
 a:hover {
-    color: #ab91d7;
+    color: #4b1a9c;
+    border-bottom: none;
 }
 
-/* Headings */
-
-h1, h2, h3, h4, h5, h6 {
-    color: #333; /* darker text for headings */
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-h1 {
-    font-family: 'Passion One', cursive;
-}
-
-/* Banner */
-
+/* Header/Banner */
 #banner {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8em 4em 6em 4em;
     min-height: 70vh;
-    position: relative;
+    background-color: #faf3ff; /* match body */
     text-align: center;
-    overflow: hidden;
 }
 
-#banner:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #dcd0f5; /* light purple overlay */
-    opacity: 0.45;
-    z-index: 1;
+#banner h1 {
+    color: #6b2dcf; /* dark purple */
+    font-family: 'Passion One', cursive;
+    font-size: 5em;
+    margin: 0;
 }
 
-#banner .inner {
-    position: relative;
-    z-index: 2;
-    color: #333;
+#banner p {
+    color: #333; /* readable text */
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
-/* Boxes / Thumbnails */
+/* Main content */
+#main {
+    padding: 4em 0 2em 0;
+    background-color: #faf3ff; /* match body */
+}
 
+#main .inner {
+    width: 90%;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+/* Thumbnails / Boxes */
 .thumbnails {
     display: flex;
     flex-wrap: wrap;
@@ -89,64 +63,64 @@ h1 {
     gap: 2em;
 }
 
-.box {
-    background: #f6ebff; /* soft pastel purple */
-    border: 1px solid #e0d1ff; /* subtle border */
+.thumbnails .box {
+    background-color: #f9f0ff; /* slightly different shade for contrast */
     border-radius: 8px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 300px;
 }
 
-.box:hover {
-    background: #e0d1ff; /* slightly darker on hover */
+.thumbnails .box:hover {
     transform: scale(1.02);
     box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
 
-.box img {
-    border-radius: 4px 4px 0 0;
+.thumbnails .box img {
+    border-radius: 8px 8px 0 0;
     width: 100%;
     height: auto;
 }
 
-.box .inner {
+.thumbnails .box .inner {
     padding: 1.5em;
 }
 
 /* Footer */
-
-#footer {
-    background-color: #f6ebff; /* soft pastel purple */
-    text-align: center;
-    padding: 4em 0 2em 0;
-    color: #333;
-}
-
-#footer a {
-    color: #6b2dcf;
-    text-decoration: none;
-}
-
-#footer a:hover {
-    color: #ab91d7;
-}
-
-.copyright {
-    background-color: #f6ebff;
+#footer, .copyright {
+    background-color: #faf3ff; /* match body */
     color: #333;
     text-align: center;
     padding: 2em 0;
 }
 
-.link-text {
+#footer a {
     color: #6b2dcf;
+    font-weight: bold;
     text-decoration: underline;
 }
 
-.link-text:hover {
-    color: #ab91d7;
+#footer a:hover {
+    color: #4b1a9c;
 }
 
+/* Buttons */
+.button, input[type="submit"], button {
+    background-color: #6b2dcf;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
 
+.button:hover, input[type="submit"]:hover, button:hover {
+    background-color: #4b1a9c;
+}
+
+/* Optional: adjust sections that had their own dark backgrounds */
+#footer .inner, #main .inner, #banner .inner {
+    background-color: transparent;
+}
 
