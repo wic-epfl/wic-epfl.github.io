@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feminist Events – Women+ in IC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header.inner {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    header.inner h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header.inner a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: white;
+      color: #6b2dcf;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header.inner a:hover {
+      background-color: #6b2dcf;
+      color: white;
+    }
+
+    /* Two-column event section */
+    .events-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .event {
+      flex: 1 1 300px;
+      max-width: 400px;
+      background-color: #f3e8ff;
+      border: 1px solid #d4c0f7;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .event h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #6b2dcf;
+    }
+
+    .event p {
+      font-size: 1rem;
+      color: #333;
+      margin: 0.5rem 0 1.5rem 0;
+    }
+
+    /* Speaker cards */
+    .speakers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    .speaker {
+      width: 300px;
+      text-align: center;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background-color: #f3e8ff;
+      border: 1px solid #d4c0f7;
+      color: #333;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .speaker:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, #f3e8ff, #e0d1ff);
+    }
+
+    .speaker img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin: 0.5rem 0;
+    }
+
+    .speaker .name-occupation {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .speaker .date {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    footer.inner {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    footer.inner a {
+      color: #6b2dcf;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer.inner a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="inner">
+    <a href="index.html">Home</a>
+    <h1>Feminist Events</h1>
+  </header>
+
+  <div class="inner">
+
+    <div class="events-container">
+
+      <!-- 14 June Event -->
+      <div class="event">
+        <h2>14 June – Swiss Women's Strike</h2>
+        <p>A national event advocating gender equality and raising awareness of women's rights in the workplace and beyond.</p>
+
+        <!-- Speakers for 14 June -->
+        <div class="speakers">
+          <div class="speaker">
+            <div class="name-occupation">14th June 2024</div>
+            <img src="images/alice.jpg" alt=" ">
+            <div class="date"> </div>
+          </div>
+
+          <div class="speaker">
+            <div class="name-occupation">14th June 2025</div>
+            <img src="images/laura.jpg" alt=" ">
+            <div class="date">14 June 2023</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- March 8 Event -->
+      <div class="event">
+        <h2>March 8 – International Women's Rights Day</h2>
+        <p>Celebrating achievements and promoting initiatives supporting women+ in science, technology, and academia.</p>
+
+        <!-- Speakers for March 8 -->
+        <div class="speakers">
+          <div class="speaker">
+            <div class="name-occupation">March 8th 2025</div>
+            <img src="images/emma.jpg" alt=" ">
+            <div class="date"> </div>
+          </div>
+
+          <div class="speaker">
+            <div class="name-occupation">March 8th 2024</div>
+            <img src="images/sophie.jpg" alt=" ">
+            <div class="date"> </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="inner">
+    <p><a href="index.html">Home</a></p>
+  </footer>
+
+</body>
+</html>
 
