@@ -11,39 +11,64 @@
       flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
+      padding: 2rem 0;
     }
 
     .speaker {
       width: 300px;
       text-align: center;
-      border: 1px solid #ddd;
       border-radius: 10px;
       padding: 1rem;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      background-color: #f3e8ff; /* light purple */
+      border: 1px solid #d4c0f7; /* subtle border */
+      color: #333;
+      transition: transform 0.2s, background 0.3s;
     }
 
     .speaker:hover {
       transform: translateY(-5px);
+      background: linear-gradient(135deg, #f3e8ff, #e0d1ff);
     }
 
     .speaker img {
       width: 100%;
       height: auto;
       border-radius: 8px;
-      object-fit: cover; /* ensures portrait images aren't squeezed */
+      object-fit: cover;
       margin: 0.5rem 0;
     }
 
     .speaker .name-occupation {
       font-weight: bold;
       font-size: 1rem;
-      color: #333;
+      margin-bottom: 0.5rem;
     }
 
     .speaker .date {
       font-size: 0.9rem;
-      color: #666;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    header.inner a {
+      display: inline-block;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: #6b2dcf;
+    }
+
+    header.inner a:hover {
+      text-decoration: underline;
+    }
+
+    footer.inner a {
+      color: #6b2dcf;
+      text-decoration: none;
+    }
+
+    footer.inner a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -57,7 +82,6 @@
     <h2>Past Speakers</h2>
 
     <div class="speakers">
-
       <div class="speaker">
         <div class="name-occupation">Pr. Marta Martinez-Camara – Open Systems, Saxophone Player</div>
         <img src="images/marta1216.jpeg" alt="Marta Martinez-Camara">
@@ -71,19 +95,19 @@
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Pr. Carmela Troncoso – Security and Privacy Engineering Lab</div>
+        <div class="name-occupation">Pr. Carmela Troncoso – Security and Privacy engineering lab</div>
         <img src="images/carmela-v23968.JPG" alt="Carmela Troncoso">
         <div class="date">January 22nd 2025</div>
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Pr. Charlotte Bunne – Artificial Intelligence in Molecular Medicine Lab</div>
+        <div class="name-occupation">Pr. Charlotte Bunne – Artificial Intelligence in Molecular Medicine lab</div>
         <img src="images/charlotte.JPG" alt="Charlotte Bunne">
         <div class="date">December 4th, 2024</div>
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Pr. Anne-Marie Kermarrec – Scalable Computing System Lab</div>
+        <div class="name-occupation">Pr. Anne-Marie Kermarrec – Scalable Computing System lab</div>
         <img src="images/anne-marie.JPG" alt="Anne-Marie Kermarrec">
         <div class="date">April 18th 2024</div>
       </div>
@@ -95,41 +119,40 @@
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Theresa Stadler – Security and Privacy Engineering Lab</div>
+        <div class="name-occupation">Theresa Stadler – Security and Privacy engineering lab</div>
         <img src="images/theresa.JPG" alt="Theresa Stadler">
         <div class="date">November 19th 2023</div>
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Pr. Sabine Süsstrunk – Image and Visual Representation Lab</div>
+        <div class="name-occupation">Pr. Sabine Süsstrunk – Image and Visual Representation lab</div>
         <img src="images/sabine.JPG" alt="Sabine Süsstrunk">
         <div class="date">November 1st 2023</div>
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Darja Jovanovic – Executive Director, Scala Center</div>
+        <div class="name-occupation">Darja Jovanovic – Executive Director, Scala center</div>
         <img src="images/darja3261.jpeg" alt="Darja Jovanovic">
         <div class="date">June 1st 2023</div>
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Pr. Tanja Käser – Machine Learning for Education Lab</div>
+        <div class="name-occupation">Pr. Tanja Käser – Machine Learning for Education lab</div>
         <img src="images/tanja.jpeg" alt="Tanja Käser">
         <div class="date">March 31st 2023</div>
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Pr. Maria Brbic – Machine Learning for Biomedicine Lab</div>
+        <div class="name-occupation">Pr. Maria Brbic – Machine learning for Biomedicine lab</div>
         <img src="images/maria.jpg" alt="Maria Brbic">
         <div class="date">December 16th 2022</div>
       </div>
 
       <div class="speaker">
-        <div class="name-occupation">Pr. Carmela Troncoso – Security and Privacy Engineering Lab</div>
+        <div class="name-occupation">Pr. Carmela Troncoso – Security and Privacy engineering lab</div>
         <img src="images/carmela6563.jpg" alt="Carmela Troncoso">
         <div class="date">November 5th 2022</div>
       </div>
-
     </div>
   </div>
 
