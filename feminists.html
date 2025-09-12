@@ -37,7 +37,6 @@
       color: white;
     }
 
-    /* Two-column event section */
     .events-container {
       display: flex;
       flex-wrap: wrap;
@@ -66,16 +65,15 @@
     .event p {
       font-size: 1rem;
       color: #333;
-      margin: 0.5rem 0 1.5rem 0;
+      margin: 0.5rem 0 1rem 0;
     }
 
-    /* Speaker cards */
     .speakers {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
 
     .speaker {
@@ -133,71 +131,61 @@
 </head>
 <body>
 
-  <header class="inner">
-    <a href="index.html">Home</a>
-    <h1>Feminist Events</h1>
-  </header>
+<header class="inner">
+  <a href="index.html">Home</a>
+  <h1>Feminist Events</h1>
+</header>
 
-  <div class="inner">
+<div class="inner">
+  <div class="events-container">
 
-    <div class="events-container">
-
-      <!-- 14 June Event -->
-      <div class="event">
-        <h2>14 June – Swiss Women's Strike</h2>
-        <p>A national event advocating gender equality and raising awareness of women's rights in the workplace and beyond.</p>
-
-        <!-- Speakers for 14 June -->
-
-          <div class="speaker">
-            <div class="name-occupation">14th June 2025</div>
-            <img src="images/14juin25.jpg" alt=" ">
-            <div class="date"> </div>
-          </div>
-        </div>
-      </div>
+    <!-- 14 June Event -->
+    <div class="event">
+      <h2>14 June – Swiss Women's Strike</h2>
+      <p>A national event advocating gender equality and raising awareness of women's rights in the workplace and beyond.</p>
 
       <div class="speakers">
-          <div class="speaker">
-            <div class="name-occupation">14th June 2024</div>
-            <img src="images/14juin24_1504.jpeg" alt=" ">
-            <div class="date"> </div>
-          </div>
+        <div class="speaker">
+          <div class="name-occupation">14th June 2025</div>
+          <img src="images/14juin25.jpg" alt="14 June 2025">
+        </div>
 
-          <div class="speakers">
-          <div class="speaker">
-            <div class="name-occupation">14th June 2023</div>
-            <img src="images/14juin23.JPG" alt=" ">
-            <div class="date"> </div>
-          </div>
+        <div class="speaker">
+          <div class="name-occupation">14th June 2024</div>
+          <img src="images/14juin24_1504.jpeg" alt="14 June 2024">
+        </div>
 
-      <!-- March 8 Event -->
-      <div class="event">
-        <h2>March 8 – International Women's Rights Day</h2>
-        <p>Celebrating achievements and promoting initiatives supporting women+ in science, technology, and academia.</p>
-
-        <!-- Speakers for March 8 -->
-        <div class="speakers">
-          <div class="speaker">
-            <div class="name-occupation">March 8th 2025</div>
-            <img src="images/march8th25.JPG" alt=" ">
-            <div class="date"> </div>
-          </div>
-
-          <div class="speaker">
-            <div class="name-occupation">March 8th 2024</div>
-            <img src="images/march8th.jpg" alt=" ">
-            <div class="date"> </div>
-          </div>
+        <div class="speaker">
+          <div class="name-occupation">14th June 2023</div>
+          <img src="images/14juin23.JPG" alt="14 June 2023">
         </div>
       </div>
-
     </div>
-  </div>
 
-  <footer class="inner">
-    <p><a href="index.html">Home</a></p>
-  </footer>
+    <!-- March 8 Event -->
+    <div class="event">
+      <h2>March 8 – International Women's Rights Day</h2>
+      <p>Celebrating achievements and promoting initiatives supporting women+ in science, technology, and academia.</p>
+
+      <div class="speakers">
+        <div class="speaker">
+          <div class="name-occupation">March 8th 2025</div>
+          <img src="images/march8th25.JPG" alt="March 8 2025">
+        </div>
+
+        <div class="speaker">
+          <div class="name-occupation">March 8th 2024</div>
+          <img src="images/march8th.jpg" alt="March 8 2024">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="inner">
+  <p><a href="index.html">Home</a></p>
+</footer>
 
 </body>
 </html>
