@@ -1432,3 +1432,13 @@
 			}
 
 		}
+
+.link-text {
+    color: #ffffff; /* text color */
+    text-decoration: underline; /* always underlined */
+}
+
+.link-text:hover {
+    color: #ff8686; /* optional hover color */
+}
+
