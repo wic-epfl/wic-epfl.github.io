@@ -6,6 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css">
   <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header.inner {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    header.inner h1 {
+      font-size: 3rem; /* bigger title */
+      margin-bottom: 1rem;
+    }
+
+    header.inner a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: white; /* white button */
+      color: #6b2dcf; /* purple text */
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header.inner a:hover {
+      background-color: #6b2dcf; /* purple on hover */
+      color: white;
+    }
+
+    .inner h2 {
+      text-align: center; /* center past speakers */
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
     .speakers {
       display: flex;
       flex-wrap: wrap;
@@ -51,20 +88,15 @@
       margin-top: 0.5rem;
     }
 
-    header.inner a {
-      display: inline-block;
-      margin-bottom: 1rem;
-      text-decoration: none;
-      color: #6b2dcf;
-    }
-
-    header.inner a:hover {
-      text-decoration: underline;
+    footer.inner {
+      text-align: center;
+      margin: 2rem 0;
     }
 
     footer.inner a {
       color: #6b2dcf;
       text-decoration: none;
+      font-weight: bold;
     }
 
     footer.inner a:hover {
