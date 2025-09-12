@@ -5,6 +5,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Basic styling for the seminar page */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .inner {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Flexbox layout for speakers */
+    .speakers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .speaker {
+      flex: 1 1 300px; /* responsive width */
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .speaker img {
+      width: 100%;
+      height: auto;        /* maintain aspect ratio */
+      object-fit: contain;  /* prevents squeezing */
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .speaker h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <header class="inner">
@@ -14,68 +69,66 @@
 
   <div class="inner">
     <h2>Past Speakers</h2>
+    <div class="speakers">
+      <div class="speaker">
+        <h3>Pr. Marta Martinez-Camara – April 16th 2025</h3>
+        <img src="images/marta1216.jpeg" alt="Marta Martinez-Camara">
+      </div>
 
-    <div class="speaker">
-      <h3>Pr. Marta Martinez-Camara – April 16th 2025 (Open Systems, Saxophone Player)</h3>
-      <img src="images/marta1216.jpeg" width="400" height="250">
-    </div>
+      <div class="speaker">
+        <h3>Sofía Celi – January 29th 2025</h3>
+        <img src="images/sofia.JPG" alt="Sofía Celi">
+      </div>
 
-    <div class="speaker">
-      <h3>Sofía Celi – January 29th 2025 (Brave)</h3>
-      <img src="images/sofia.JPG" width="400" height="250">
-    </div>
-  </div>
+      <div class="speaker">
+        <h3>Pr. Carmela Troncoso – January 22nd 2025</h3>
+        <img src="images/carmela-v23968.JPG" alt="Carmela Troncoso">
+      </div>
 
-    <div class="speaker">
-      <h3>Pr. Carmela Troncoso – January 22nd 2025 (Security and Privacy engineering lab)</h3>
-      <img src="images/carmela-v23968.JPG" width="400" height="250">
-    </div>
-  </div>
+      <div class="speaker">
+        <h3>Pr. Charlotte Bunne – December 4th, 2024</h3>
+        <img src="images/charlotte.JPG" alt="Charlotte Bunne">
+      </div>
 
-  <div class="speaker">
-      <h3>Pr. Charlotte Bunne – December 4th, 2024 (Artificial Intelligence in Molecular Medicine lab)</h3>
-      <img src="images/charlotte.JPG" width="400" height="250">
-    </div>
-  
-  </div>
-    <div class="speaker">
-      <h3>Pr. Anne-Marie Kermarrec – April 18th 2024 (Scalable Computing System lab)</h3>
-      <img src="images/anne-marie.JPG"  width="400" height="250">
-    </div> 
-    
-    <div class="speaker">
-      <h3>Manon Michel – December 13th 2023 (Alumna, Tune Insight)</h3>
-      <img src="images/manon6992.jpeg"  width="400" height="250">
-    </div> 
-    
-    <div class="speaker">
-      <h3>Theresa Stadler – November 19th 2023 (Security and Privacy engineering lab)</h3>
-      <img src="images/theresa.JPG"  width="400" height="250">
-    </div> 
+      <div class="speaker">
+        <h3>Pr. Anne-Marie Kermarrec – April 18th 2024</h3>
+        <img src="images/anne-marie.JPG" alt="Anne-Marie Kermarrec">
+      </div>
 
-    <div class="speaker">
-      <h3>Pr. Sabine Süsstrunk – November 1st 2023 (Image and Visual Representation lab)</h3>
-      <img src="images/sabine.JPG"  width="400" height="250">
-    </div>  
-    
-    <div class="speaker">
-      <h3>Darja Jovanovic – June 1st 2023 (Executive Director, Scala center)</h3>
-      <img src="images/darja3261.jpeg"  width="400" height="250">
-    </div>
+      <div class="speaker">
+        <h3>Manon Michel – December 13th 2023</h3>
+        <img src="images/manon6992.jpeg" alt="Manon Michel">
+      </div>
 
-    <div class="speaker">
-      <h3>Pr. Tanja Käser – March 31st, 2023 (Machine Learning for Education lab)</h3>
-      <img src="images/tanja.jpeg"  width="400" height="250">
-    </div>
+      <div class="speaker">
+        <h3>Theresa Stadler – November 19th 2023</h3>
+        <img src="images/theresa.JPG" alt="Theresa Stadler">
+      </div>
 
-    <div class="speaker">
-      <h3>Pr. Maria Brbic – December 16th 2022 (Machine learning for Biomedicine lab) </h3>
-      <img src="images/maria.jpg"  width="400" height="250">
-    </div>
+      <div class="speaker">
+        <h3>Pr. Sabine Süsstrunk – November 1st 2023</h3>
+        <img src="images/sabine.JPG" alt="Sabine Süsstrunk">
+      </div>
 
-    <div class="speaker">
-      <h3>Pr. Carmela Troncoso – November 5th 2022 (Security and Privacy engineering lab)</h3>
-      <img src="images/carmela6563.jpg"  width="400" height="250">
+      <div class="speaker">
+        <h3>Darja Jovanovic – June 1st 2023</h3>
+        <img src="images/darja3261.jpeg" alt="Darja Jovanovic">
+      </div>
+
+      <div class="speaker">
+        <h3>Pr. Tanja Käser – March 31st, 2023</h3>
+        <img src="images/tanja.jpeg" alt="Tanja Käser">
+      </div>
+
+      <div class="speaker">
+        <h3>Pr. Maria Brbic – December 16th 2022</h3>
+        <img src="images/maria.jpg" alt="Maria Brbic">
+      </div>
+
+      <div class="speaker">
+        <h3>Pr. Carmela Troncoso – November 5th 2022</h3>
+        <img src="images/carmela6563.jpg" alt="Carmela Troncoso">
+      </div>
     </div>
   </div>
 
@@ -84,3 +137,4 @@
   </footer>
 </body>
 </html>
+
