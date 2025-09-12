@@ -1,1 +1,143 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lunch Time Seminars – Women+ in IC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header.inner {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    header.inner h1 {
+      font-size: 3rem; /* bigger title */
+      margin-bottom: 1rem;
+    }
+
+    header.inner a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: white; /* white button */
+      color: #6b2dcf; /* purple text */
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header.inner a:hover {
+      background-color: #6b2dcf; /* purple on hover */
+      color: white;
+    }
+
+    .inner h2 {
+      text-align: center; /* center past speakers */
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .speakers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+
+    .speaker {
+      width: 300px;
+      text-align: center;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background-color: #f3e8ff; /* light purple */
+      border: 1px solid #d4c0f7; /* subtle border */
+      color: #333;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .speaker:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, #f3e8ff, #e0d1ff);
+    }
+
+    .speaker img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      margin: 0.5rem 0;
+    }
+
+    .speaker .name-occupation {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .speaker .date {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    footer.inner {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    footer.inner a {
+      color: #6b2dcf;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer.inner a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="inner">
+    <a href="index.html">← Back to Home</a>
+    <h1>Lunch Time Seminars</h1>
+  </header>
+
+  <div class="inner">
+    <h2>Past Workshops</h2>
+
+    <div class="speaker">
+        <div class="name-occupation">Meditation Workshop - </div>
+        <img src="images/sofia.JPG" alt="">
+        <div class="date">February 19th 2025</div>
+      </div>
+
+    <div class="speakers">
+      <div class="speaker">
+        <div class="name-occupation"> Technical Interview Workshop - Google </div>
+        <img src="images/marta1216.jpeg" alt="">
+        <div class="date">April 24th 2024</div>
+      </div>
+      
+      <div class="speaker">
+        <div class="name-occupation"> Improve your Presentation Skills Workshop - Ksenia Kram </div>
+        <img src="images/carmela-v23968.JPG" alt="">
+        <div class="date">January 22nd 2025</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="inner">
+    <p><a href="index.html">Home</a></p>
+  </footer>
+</body>
+</html>
