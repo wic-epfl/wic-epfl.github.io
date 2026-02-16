@@ -9,132 +9,131 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
-        body {
-            font-family: "Source Sans Pro", sans-serif;
-        }
+    body {
+        font-family: "Source Sans Pro", sans-serif;
+    }
 
-                /* Reduce overall banner height */
-        #banner {
-            padding: 1em 0 !important; /* top & bottom spacing */
-        }
-        
-        /* Center everything inside header */
-        #banner header {
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Logo */
-        #banner header img {
-            display: block;
-            margin: 0 auto 0.5em auto; /* small gap below logo */
-        }
-        
-        /* Text below logo */
-        #banner .center-text {
-            max-width: 800px;
-            margin: 0 auto 0; /* remove extra bottom margin */
-            font-size: 1.2em;
-            line-height: 1.4em;
-        }
-        /* Reduce gap between banner and first content section */
-        #main .inner {
-            margin-top: 1em; /* or 0 if you want it very tight */
-            padding-top: 0;
-        }
-        
-        /* Optional: reduce heading top margin */
-        h3.section-title:first-of-type {
-            margin-top: 0.5em; /* default is probably larger */
-        }
-        /* Section Headings */
-        h3.section-title {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 1em;
-        }
+    /* Banner adjustments */
+    #banner {
+        padding: 1em 0 !important; /* top & bottom spacing */
+    }
 
-        /* Cards */
-        .thumbnails .box {
-            background-color: #ffffff;
-            color: #202024;
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 2em;
-        }
+    #banner header {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
 
-        .thumbnails .box h3 a {
-            color: #202024;
-            text-decoration: none;
-        }
+    #banner header img {
+        display: block;
+        margin: 0 auto 0.5em auto; /* small gap below logo */
+    }
 
-        /* Centered Text */
-        .center-text {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 1.5em auto;
-        }
+    #banner .center-text {
+        max-width: 800px;
+        margin: 0 auto 0 !important; /* remove extra bottom margin */
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
 
-        /* Footer */
-        #footer {
-            background-color: #2c2c32;
-            color: #ffffff;
-            text-align: center;
-            padding: 3em 1em;
-        }
+    /* Remove extra space above first section */
+    #main .inner:first-of-type {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
 
-        #footer h2 {
-            color: #ffffff;
-            font-size: 1.8em;
-            margin-bottom: 0.5em;
-        }
+    h3.section-title:first-of-type {
+        margin-top: 0 !important; /* remove default heading top margin */
+    }
 
-        #footer a[href*="t.me"] {
-            color: inherit; /* inherit white from parent */
-            text-decoration: underline;
-        }
+    /* Section Headings */
+    h3.section-title {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
 
-        #footer .icons li {
-            display: inline-block;
-            margin: 0 0.5em;
-        }
+    /* Cards */
+    .thumbnails .box {
+        background-color: #ffffff;
+        color: #202024;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+        margin-bottom: 2em;
+    }
 
-        #footer .icons li a {
-            font-size: 1.8em;
-            color: #ffffff;
-            width: 2.5em;
-            height: 2.5em;
-            line-height: 2.5em;
-            display: inline-block;
-            text-align: center;
-            border-radius: 50%;
-            border: 1px solid rgba(255,255,255,0.25);
-        }
+    .thumbnails .box h3 a {
+        color: #202024;
+        text-decoration: none;
+    }
 
-        #footer .icons li a:hover {
-            color: #70c7be;
-            border-color: #70c7be;
-        }
+    /* Centered Text */
+    .center-text {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 1.5em auto;
+    }
 
-        /* Extra Resources */
-        .extra-resources ul {
-            font-size: 0.9em;
-            max-width: 800px;
-            margin: 0 auto 2em auto;
-            padding-left: 1.2em;
-        }
-        /* Links */
-        a {
-            color: #202024; /* same as normal text */
-            text-decoration: underline; /* always underlined */
-        }
-    
-        .thumbnails .box h3 a {
-            color: #202024;
-            text-decoration: underline; /* underline links in cards */
-        }
-    </style>
+    /* Footer */
+    #footer {
+        background-color: #2c2c32;
+        color: #ffffff;
+        text-align: center;
+        padding: 3em 1em;
+    }
+
+    #footer h2 {
+        color: #ffffff;
+        font-size: 1.8em;
+        margin-bottom: 0.5em;
+    }
+
+    #footer a[href*="t.me"] {
+        color: inherit; 
+        text-decoration: underline;
+    }
+
+    #footer .icons li {
+        display: inline-block;
+        margin: 0 0.5em;
+    }
+
+    #footer .icons li a {
+        font-size: 1.8em;
+        color: #ffffff;
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    #footer .icons li a:hover {
+        color: #70c7be;
+        border-color: #70c7be;
+    }
+
+    /* Extra Resources */
+    .extra-resources ul {
+        font-size: 0.9em;
+        max-width: 800px;
+        margin: 0 auto 2em auto;
+        padding-left: 1.2em;
+    }
+
+    /* Links */
+    a {
+        color: #202024; 
+        text-decoration: underline;
+    }
+
+    .thumbnails .box h3 a {
+        color: #202024;
+        text-decoration: underline;
+    }
+</style>
 </head>
 <body id="top">
 
@@ -265,6 +264,7 @@
 
 </body>
 </html>
+
 
 
 
