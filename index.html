@@ -13,17 +13,30 @@
             font-family: "Source Sans Pro", sans-serif;
         }
 
-        /* Banner */
-        #banner .inner .center-text {
+                /* Reduce overall banner height */
+        #banner {
+            padding: 1em 0 !important; /* top & bottom spacing */
+        }
+        
+        /* Center everything inside header */
+        #banner header {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Logo */
+        #banner header img {
+            display: block;
+            margin: 0 auto 0.5em auto; /* small gap below logo */
+        }
+        
+        /* Text below logo */
+        #banner .center-text {
             max-width: 800px;
-            margin: 0 auto 1em auto; /* keep centered */
-        }
-        #banner h1 {
-            font-size: 4em;
-            margin: 0.2em 0;
-        }
-        #banner p {
+            margin: 0 auto 0; /* remove extra bottom margin */
             font-size: 1.2em;
+            line-height: 1.4em;
         }
 
         /* Section Headings */
@@ -120,7 +133,7 @@
     <section id="banner">
         <div class="inner">
             <header>
-                <img src="images/logo_clear.png" alt="Logo" width="400" height="400">
+                <img src="images/logo_clear.png" alt="Logo" width="300" height="300">
                 <!--  <h1>Women+ in IC</h1> -->
                 <p class="center-text">We are an EPFL association under the umbrella of the IC faculty. Our goals are to build a community for women-identifying, non-binary, agender peers; provide exposure; and create bridges 💜</p>
             </header>
@@ -241,6 +254,7 @@
 
 </body>
 </html>
+
 
 
 
