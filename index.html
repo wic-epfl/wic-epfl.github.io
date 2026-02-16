@@ -38,7 +38,16 @@
             font-size: 1.2em;
             line-height: 1.4em;
         }
-
+        /* Reduce gap between banner and first content section */
+        #main .inner {
+            margin-top: 1em; /* or 0 if you want it very tight */
+            padding-top: 0;
+        }
+        
+        /* Optional: reduce heading top margin */
+        h3.section-title:first-of-type {
+            margin-top: 0.5em; /* default is probably larger */
+        }
         /* Section Headings */
         h3.section-title {
             text-align: center;
@@ -142,7 +151,15 @@
 
     <!-- Main Content -->
     <div id="main">
-
+        
+        <!-- Who are we? -->
+        <div class="inner">
+            <h3 class="section-title">Who are we?</h3>
+            <p class="center-text">
+        <a href="history.html">Click here</a> to find out about the history of the association and the past and current committees.
+        </p>
+        </div>
+        
         <!-- Our Activities -->
         <div class="inner">
             <h3 class="section-title">Our Activities</h3>
@@ -188,13 +205,7 @@
             <p class="center-text">As an ally at our events, be mindful of the space you occupy, both physically and in conversation, and be open to feedback if something you say or do is called out as problematic. Instead of becoming defensive, take time to reflect and learn from the experience.</p>
         </div>
 
-        <!-- Who are we? -->
-        <div class="inner">
-            <h3 class="section-title">Who are we?</h3>
-            <p class="center-text">
-        <a href="history.html">Click here</a> to find out about the history of the association and the past and current committees.
-    </p>
-        </div>
+        
 
         <!-- Statutes -->
         <div class="inner">
@@ -254,6 +265,7 @@
 
 </body>
 </html>
+
 
 
 
