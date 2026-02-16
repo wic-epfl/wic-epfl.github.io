@@ -75,13 +75,20 @@
             border-color: #70c7be;
         }
 
-        /* Make banner thinner */
+        /* Completely override template banner sizing */
         #banner {
-            padding: 2em 0 1.5em 0;  /* top and bottom spacing */
+            padding: 0 !important;
+            min-height: auto !important;
+            height: auto !important;
         }
         
-        /* Center the logo nicely */
+        #banner .inner {
+            padding: 0 !important;
+        }
+        
         #banner header {
+            padding: 0;
+            margin: 0;
             text-align: center;
         }
         
